@@ -1,0 +1,21 @@
+{
+    "LoginDetails" : {
+        "fname" : "Reshma",
+        "lname" : "K",
+        "email" : "reshmak@gmail.com",
+        "telephone" : "1234657890",
+        "password" : "resh@123",
+        "cpassword" : "resh@123"
+    },
+    
+    "LoginDataa" : {
+        "email" : "reshmak@gmail.com",
+        "password" : "resh@123"
+    },
+
+    "InvalidDataa" : {
+        "email" : "reshmakgmail.com",
+        "password" : "resh@123",
+        "errormsg" : "Warning: No match for E-Mail Address and/or Password."
+    }
+}
