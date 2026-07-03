@@ -2,14 +2,14 @@
     "LoginDetails" : {
         "fname" : "Reshma",
         "lname" : "K",
-        "email" : "reshmak@gmail.com",
+        "email" : "reshmak123@gmail.com",
         "telephone" : "1234657890",
         "password" : "resh@123",
         "cpassword" : "resh@123"
     },
     
     "LoginDataa" : {
-        "email" : "reshmak@gmail.com",
+        "email" : "reshmak123@gmail.com",
         "password" : "resh@123"
     },
 

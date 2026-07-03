@@ -3,11 +3,11 @@ import loginData from '../Test-Data/loginData.json' with {type : 'json'}
 
 test.describe("LoginCredentials", () => {
     test.beforeEach(async({registerPage})=>{
-        registerPage.navigate();
+        await registerPage.navigate();
     });
 
     test("Valid Login @smoke", async({loginPage}) => {
-        loginPage.LoginDetails(
+        await loginPage.LoginDetails(
             loginData.LoginDataa.email,
             loginData.LoginDataa.password
         );
@@ -15,7 +15,7 @@ test.describe("LoginCredentials", () => {
     });
 
     test("Invalid Login @Regression", async({loginPage}) => {
-        loginPage.LoginDetails(
+        await loginPage.LoginDetails(
             loginData.InvalidDataa.email,
             loginData.InvalidDataa.password
         );

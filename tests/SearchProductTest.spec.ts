@@ -4,8 +4,8 @@ import loginData from '../Test-Data/loginData.json' with {type : 'json'}
 
 test.describe("RegisterValidDetails", () => {
     test.beforeEach(async({registerPage, loginPage, productPage})=>{
-        registerPage.navigate();
-        loginPage.LoginDetails(
+        await registerPage.navigate();
+        await loginPage.LoginDetails(
             loginData.LoginDataa.email,
             loginData.LoginDataa.password
         );

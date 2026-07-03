@@ -1,0 +1,4 @@
+Promise { <pending> }
+Current Url :  https://www.bing.com/
+Get Inner Text :  Sign in
+Get Attribute :  [AsyncFunction: getAttribute]

@@ -4,11 +4,12 @@ import loginData from '../Test-Data/loginData.json' with {type : 'json'}
 
 test.describe("RegisterValidDetails", () => {
     test.beforeEach(async({registerPage})=>{
-        registerPage.navigate();
+        await registerPage.navigate();
+        await registerPage.RegisterPage();
     });
     
     test("Register Details", async({registerPage}) => {
-        registerPage.LoginData(
+         await registerPage.LoginData(
             loginData.LoginDetails.fname,
             loginData.LoginDetails.lname,
             loginData.LoginDetails.email,
@@ -16,6 +17,7 @@ test.describe("RegisterValidDetails", () => {
             loginData.LoginDetails.password,
             loginData.LoginDetails.cpassword
         );
-        expect(registerPage.SuccessMsg).toContainText("Created!")
+        await registerPage.Continue();
+        await expect(registerPage.SuccessMsg).toHaveText("Your Account Has Been Created!");
     })
 })
